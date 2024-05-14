@@ -1,86 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-/* html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-} */
-
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-    margin-block-end: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
-}
-
-/* Set core body defaults
-body {
-    min-height: 100vh;
-    line-height: 1.5;
-} */
-
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-    line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-    text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
+img {
     max-width: 100%;
-    display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
-    font-family: inherit;
-    font-size: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-    min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-    scroll-margin-block: 5ex;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    width: 200px;
+    height: 185px;
+    top: 215px;
+    left: 215px;
+    gap: 0px;
+    border-radius: 15px 15px 0px 0px;
+    opacity: 0px;
 }
 
 :root {
     background-color: #D74949;
-    width: 1440px;
-    height: 684px;
+    width: 100%;
+    height: auto;
+    width: 422px;
     top: -32px;
     left: -336px;
+}
+body {
+    margin: 0%;
 }
 
 footer {
@@ -102,18 +47,26 @@ footer {
 .rectangle {
     width: 1440px;
     height: 70px;
-    margin-top: 615px;
+    top: 615px;
     background-color: #3a3a3a;
     text-align: center;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
 }
 
 .rectangle2 {
+    display: block;
     width: 1110px;
     height: 615px;
     left: 165px;
     background-color: #f3f3f3;
     margin-left: 165px;
-    display: inline-block;
+    border-top: 50px solid #f3f3f3;
+    border-left: 45px solid #f3f3f3;
+    border-right: 40px solid #f3f3f3;
+    padding-top: 15px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -126,20 +79,18 @@ h1 {
     border: 1px 0px 0px 0px;
     opacity: 0px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 16.41px;
-    text-align: left;
     color: rgba(0, 0, 0, 1);
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
     /*text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-    border: 1px solid rgba(0, 0, 0, 1)
 }
 
 h2 {
     width: 1009px;
     height: 19px;
     top: 128px;
-    left: 215px;
+    left: 200px;
     gap: 0px;
     opacity: 0px;
     font-family: "Roboto";
@@ -149,4 +100,99 @@ h2 {
     letter-spacing: 0.07em;
     text-align: right;
     color: rgba(0, 0, 0, 1);
+}
+
+p {
+    width: 1009px;
+    height: 23px;
+    top: 154px;
+    left: 215px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p>span {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    text-align: center;
+    color: #7c2622;
+    text-transform: uppercase;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 200px;
+    height: 300px;
+    top: 215px;
+    left: 215px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+.card>.name {
+    width: 64px;
+    height: 16px;
+    top: 420px;
+    left: 235px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.card>.chief {
+    width: 152px;
+    height: 16px;
+    top: 439px;
+    left: 235px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    padding-left: 20px;
+}
+
+.card>.linkedin {
+    width: 18px;
+    height: 18px;
+    top: 465px;
+    left: 235px;
+    gap: 0px;
+    opacity: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-radius: 0%;
+}
+
+.card>.whatsap {
+    width: 18px;
+    height: 18px;
+    top: 465px;
+    left: 261px;
+    gap: 0px;
+    opacity: 0px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
